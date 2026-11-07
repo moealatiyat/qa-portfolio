@@ -1,0 +1,14 @@
+TestCase#,Test Scenario,Test Cases,Test Steps,Test Data,Expected Result,Actual Result,Pass/Fail
+TC-001,Customer ID,Name cannot be empty,"1) Do not enter a value in NAME field
+2) Press TAB and move to next field",User ID(Blank),"An error message ""User ID must not be blank"" must shown",,
+TC-002,Customer ID,No special characters allowed ,"1) Enter an @ or ! point to the the field
+2) Press TAB and move to next field","User ID
+(Contain special Character)","AN error message ""User ID must not contain special Character"" must shown",,
+TC-003,Customer ID,Characters are not allowed,"1) Enter a Character on the field
+2) Press TAB and move to Next field",User ID(Contain character),"An error message ""User ID must not contain Characters"" Must show",,
+TC-003.1,Customer ID,First character must not contain a space,"1) Enter a space as the first character on the field
+2) Press TAB and move to the next field",User ID(Contain space),"An error message ""User ID must not contain a space"" must show",,
+TC-004,Customer Name,Numbers not allowed,"1) Enter a number is the name space
+2) Press TAB and move to the next Field",Customer Name( Contains number),"An error message ""Your name must not contain a number"" must show",,
+TC-005,Customer Name,No special characters allowed ,"1) Enter an @ or ! point to the the field
+2) Press TAB and move to next field",Customer Name( Contains Special Characters),"An error message ""Your name mus not contain special characters"" must show",,
